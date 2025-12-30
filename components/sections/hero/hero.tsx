@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { getAssetPath } from "@/lib/prod";
 
 export function Hero() {
   return (
@@ -133,7 +134,7 @@ export function Hero() {
             >
               <div className="absolute inset-0 bg-linear-to-br from-primary/30 via-secondary/30 to-accent/30 rounded-3xl blur-2xl" />
               <Image
-                src="/developer-illustration.jpg"
+                src={getAssetPath("/developer-illustration.jpg")}
                 alt="Developer Marcelo"
                 width={600}
                 height={600}
